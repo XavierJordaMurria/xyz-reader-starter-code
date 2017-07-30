@@ -110,6 +110,6 @@
         app:fabSize="normal"
         app:useCompatPadding="true"
         app:layout_anchorGravity="bottom|end"
-        app:pressedTranslationZ="12dp" />
+        app:pressedTranslationZ="6dp" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
