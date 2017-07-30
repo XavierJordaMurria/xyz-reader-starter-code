@@ -22,6 +22,7 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.xyzreader.R;
@@ -155,8 +156,9 @@ public class ArticleListActivity extends AppCompatActivity implements
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    View thumbnailView = (View) findViewById(R.id.thumbnail);
+                    ImageView thumbnailView = (ImageView) findViewById(R.id.thumbnail);
 
+                    thumbnailView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
                 }

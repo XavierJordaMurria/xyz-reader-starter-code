@@ -108,6 +108,7 @@
         app:borderWidth="0dp"
         app:elevation="6dp"
         app:fabSize="normal"
+        app:useCompatPadding="true"
         app:layout_anchorGravity="bottom|end"
         app:pressedTranslationZ="12dp" />
 
